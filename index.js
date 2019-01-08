@@ -2,8 +2,8 @@ const Commando = require('discord.js-commando');
 const bot = new Commando.Client({
     commandPrefix: "."
 });
-
-const TOKEN = 'NTMwNzcxNjk5OTM5OTM0MjA4.DxESlA.bjsGRtXd4foubA0UtsML3sPcqGw';
+const config = require("./config.json");
+const TOKEN = config.token;
 var forbiddenWords = [
     "arse",
     "bloody",
