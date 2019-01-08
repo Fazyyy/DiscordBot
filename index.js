@@ -78,9 +78,6 @@ bot.on('message', msg => {
     if (msg.content === 'ping') {
         msg.channel.send('pong');
     }
-    if (msg.content === 'anal') {
-        msg.channel.send('baby');
-    }
     if (msg.content === 'marco') {
         msg.channel.send('polo');
     }
