@@ -20,9 +20,9 @@ var insult = [
 class insultKevinCommand extends Commando.Command {
     constructor(client){
         super(client,{
-            name: 'insult_kevin',
+            name: 'ikev',
             group: 'simple',
-            memberName: 'insult_kevin',
+            memberName: 'ikev',
             description: 'Insults Kevin.'
         });
     }

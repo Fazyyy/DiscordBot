@@ -94,6 +94,13 @@ bot.on('message', msg => {
 
   });
 
+  bot.on('guildMemberAdd', member => {
+    const rookieRole = "538868807532412948";
+    textChannel.send("User " + member.name + " has joined the server!");
+    var role = member.guild.roles.find(role => role.name === rookieRole);
+    member.addRole(role).catch(e => console.log(e));
+  });
+
 bot.on('voiceStateUpdate', (oldMember, newMember) => {
     let newChannel = newMember.voiceChannel;
     let oldChannel = oldMember.voiceChannel;
@@ -116,5 +123,4 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
     //If user is leaving voice channel 
     }
 });
-
 bot.login(TOKEN);
